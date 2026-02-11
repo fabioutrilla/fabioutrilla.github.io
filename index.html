@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Archival Document</title>
+    <style>
+        /* THE VOID */
+        body, html {
+            background-color: #F4F4F1;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100dvh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* THE MONOLITH */
+        .monolith {
+            height: 96%;
+            width: auto;
+            max-width: 96%;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            
+            /* Safari Sharpness Fix */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: high-quality;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            
+            /* Deactivate Live Text */
+            pointer-events: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="death.png" alt="Archival Document" class="monolith">
+</body>
+</html>
