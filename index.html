@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title></title>
+    
+    <!-- FIXED VIEWPORT: Allows pinch-to-zoom on Instagram in-app browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Feel free to change this title to your name or anything else -->
+    <title>Archival Document</title>
+    
     <style>
         /* THE VOID */
         body, html {
@@ -22,16 +27,15 @@
         .citadel-image {
             max-height: 92dvh;
             max-width: 92vw;
-            background-color: #FAFAF9; /* Ensures the background matches your design */
+            background-color: #FAFAF9; 
             
-            /* Using box-shadow instead of filter: drop-shadow. 
-               This loads instantly on mobile and is hardware accelerated without bugs. */
+            /* Native, hardware-accelerated shadow (fixes the mobile loading delay) */
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             
-            /* Ensures the image scales down smoothly, fixing the crunchiness */
+            /* Ensures your 3x/4x high-res image scales smoothly (fixes the crunchiness) */
             object-fit: contain;
             
-            /* No Interaction */
+            /* Prevents accidental highlighting or dragging of the image */
             pointer-events: none;
             -webkit-user-select: none;
             user-select: none;
@@ -39,7 +43,7 @@
     </style>
 </head>
 <body>
-    <!-- SWAPPED THE SVG WRAPPER FOR A STANDARD, SCALABLE IMAGE -->
-    <img src="death.png" class="citadel-image" alt="Document" />
+    <!-- CLEAN IMAGE TAG: Replaces the buggy SVG wrapper -->
+    <img src="death.png" class="citadel-image" alt="Archival Document" />
 </body>
 </html>
